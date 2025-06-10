@@ -93,6 +93,7 @@ def login():
         pass
 
     print("登录失败")
+    print("响应内容:", response.text)
     return False
 
 
@@ -146,7 +147,8 @@ def main():
         }
 
         api_response = SESSION.post(urljoin(BASE_URL, "/doSignin"), headers=api_headers, json={})
-
+        print("签到响应：", api_response.text)
+        
         if api_response.status_code == 200:
             result = api_response.json()
             if result.get("code") == 0:
