@@ -44,7 +44,7 @@ def send_telegram(message: str):
 def get_captcha():
     captcha_url = urljoin(BASE_URL, "/utils/captcha")
     SESSION.get(captcha_url)
-    return "来抽奖吧"  # 如验证码变动请自行替换
+    return "全是气氛组"  # 如验证码变动请自行替换
 
 
 def login():
