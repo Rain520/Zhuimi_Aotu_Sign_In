@@ -8,10 +8,10 @@ from datetime import datetime
 import pytz
 
 # ✅ 从环境变量读取配置
-USERNAME = os.getenv("ZHUIMI_USERNAME")
-PASSWORD = os.getenv("ZHUIMI_PASSWORD")
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+USERNAME = os.environ.get("ZHUIMI_USERNAME")
+PASSWORD = os.environ.get("ZHUIMI_PASSWORD")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 # ✅ 网站基础配置
 BASE_URL = "https://zhuimi.xn--v4q818bf34b.com/"
