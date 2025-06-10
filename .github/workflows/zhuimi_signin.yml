@@ -68,7 +68,7 @@ jobs:
           python-version: '3.x'
 
       - name: 安装依赖
-        run: pip install requests requests-toolbelt
+        run: pip install requests requests-toolbelt beautifulsoup4 pytz
 
       - name: 执行签到脚本前
         env:
