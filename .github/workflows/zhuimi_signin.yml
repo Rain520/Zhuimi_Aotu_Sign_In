@@ -68,7 +68,7 @@ jobs:
           python-version: '3.x'
 
       - name: 安装依赖
-        run: pip install requests
+        run: pip install requests requests-toolbelt
 
       - name: 执行签到脚本前
         env:
