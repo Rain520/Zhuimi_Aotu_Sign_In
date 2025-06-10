@@ -72,8 +72,8 @@ jobs:
 
       - name: 执行签到脚本前
         env:
-          USERNAME: ${{ secrets.ZHUIMI_USERNAME }}
-          PASSWORD: ${{ secrets.ZHUIMI_PASSWORD }}
+          ZHUIMI_USERNAME: ${{ secrets.ZHUIMI_USERNAME }}
+          ZHUIMI_PASSWORD: ${{ secrets.ZHUIMI_PASSWORD }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python zhuimi自动签到通知优化版.py
