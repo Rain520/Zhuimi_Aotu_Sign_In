@@ -52,6 +52,7 @@ def login():
 
     if not USERNAME or not PASSWORD:
         print("❌ 未设置ZHUIMI_USERNAME或ZHUIMI_PASSWORD环境变量")
+        print("用户名：" + USERNAME + "密码：" + PASSWORD)
         send_telegram("❌ 未设置ZHUIMI_USERNAME或ZHUIMI_PASSWORD环境变量，登录失败")
         return False
 
